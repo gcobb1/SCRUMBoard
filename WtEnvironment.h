@@ -55,5 +55,6 @@ protected:
         int addFlagProg = 0;
         Wt::WText *MovesText;
 	int numMoves = 0;
+	int toDoCount = 0;
 };
 #endif

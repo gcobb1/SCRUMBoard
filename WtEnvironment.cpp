@@ -1,3 +1,8 @@
+//I beleve  need to create a vector of functor objects up to 100 tasks and each object tells the index that corresponds to the task. 100 possible slots to connect.
+
+
+
+
 #include <Wt/WApplication.h>
 #include <Wt/WBreak.h>
 #include <Wt/WContainerWidget.h>
@@ -15,7 +20,7 @@
 #include <boost/bind.hpp>
 #include <boost/function.hpp>
 #include "WtEnvironment.h"
-
+#include <functional>
 
 void boardApplication::AddTask(std::vector<std::vector<std::string> > GridStrings){
 	this->size++;
@@ -83,7 +88,11 @@ boardApplication::boardApplication(const Wt::WEnvironment& env)
 	table->addStyleClass("table-bordered");
 
 	ScrumBoard *Sboard = new ScrumBoard();
-
+	static std::vector<std::function<void()>> functors;
+	//functors.push_back([this] { MovesText->setText(std::to_string(this->numMoves++)); });
+	//functors.push_back([&] { return  10; });	
+	//auto lambda = [this] {  MovesText->setText(std::to_string(0)); };
+	//std::vector<std::function<void>> vec1;
 	auto TasktoProgress = [=]{
 		MovesText->setText(std::to_string(this->numMoves++));
 	};
@@ -96,6 +105,16 @@ boardApplication::boardApplication(const Wt::WEnvironment& env)
 			Sboard->flag = 0;
 		}
 		if(addFlagProg == 1){
+			
+	
+			functors.push_back([this] { MovesText->setText(std::to_string(this->numMoves++)); });
+			//auto lambda = [this] {  MovesText->setText(std::to_string(this->numMoves++)); };
+			//vec1.push_back(lambda);
+			//this->TCells[this->size - 2]->clicked().connect(std::bind(functors[this->toDoCount]));
+			this->TCells[this->size - 2]->clicked().connect(std::bind(functors[this->toDoCount]));	
+
+			this->toDoCount++;
+			//this->TCells[this->size - 2]->clicked().connect(boost::bind<void>(TasktoProgress)());	
 			//this->TCells[this->size - 2]->clicked().connect(boost::bind(&ScrumBoard::TasktoProgress, i, j));
 			//this->TCells[this->size - 2]->clicked().connect(f1);			
 			//this->TCells[this->size - 2]->clicked().connect(boost::bind(boardApplication::TasktoProgress()));
@@ -103,6 +122,8 @@ boardApplication::boardApplication(const Wt::WEnvironment& env)
 		}
 	};
 	addButton->clicked().connect(std::bind(TaskAdder));
-
+//	for(int inc = 0; inc <= this->size - 2; inc++){
+//		this->TCells[inc]->clicked().connect(std::bind(functors[0]));	
+//	}
 }
 
