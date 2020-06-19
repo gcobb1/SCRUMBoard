@@ -117,16 +117,13 @@ color: red;
 background-color: white;
 }
 .button2{
-background-color: lightblue;
-margin-top: -25%;
-margin-left: 30%;
+background-color: white;
+margin-top: 40%;
 border-width: 4px;
 border-color: darkblue;
 font-size: 25px;
 color: darkblue;
 position: absolute;
-padding-right: 14.4px;
-padding-left: 14.4px;
 }
 
 .button2:hover {
@@ -165,6 +162,10 @@ table {
     text-align: center;
     margin: 0 auto;
 }
+#t123{
+	background-color: darkblue !important;
+}
+
 .newTask{
 	background-color: white;
 	color: darkblue;

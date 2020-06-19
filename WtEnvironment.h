@@ -29,6 +29,7 @@ backend of the board object created
 #include <boost/bind.hpp>
 #include <boost/function.hpp>
 #include "SCRUMBoard.h"
+#include <functional>
 class ScrumBoard;
 class boardApplication : public Wt::WApplication
 {
@@ -39,9 +40,13 @@ public:
         void TasktoProgress(){
                 this->MovesText->setText(std::to_string(this->numMoves++));
         }
+        void ClearAddBlue(int numBlue);
+
         void AddTask(std::vector<std::vector<std::string> > GridStrings);
+        void AddTask2(std::vector<std::vector<std::string> > GridStrings);
 protected:
         int size = 1;
+	int size2 = 1;
         Wt::WText *ToDo;
         Wt::WText *Doing;
         Wt::WText *Done;
@@ -50,11 +55,17 @@ protected:
         Wt::WColor *Color;
         Wt::WLineEdit *taskEdit;
         Wt::WString taskText;
+        Wt::WString taskText2;
         std::string taskTextStr;
-        std::vector<Wt::WTableCell *> TCells;
-        int addFlagProg = 0;
+        std::string taskTextStr2;
+        std::vector<Wt::WTableCell *> TCells; 
+        std::vector<Wt::WTableCell *> TCells2;
+	int addFlagProg = 0;
         Wt::WText *MovesText;
 	int numMoves = 0;
 	int toDoCount = 0;
+	int indexClicked = 1;
+	int indexClickedInc = 1;
+	std::vector<std::vector<std::string> > Matrix1;
 };
 #endif

@@ -21,6 +21,7 @@ public:
 	ScrumBoard(){
 		this->GridStrings.resize(1);
 		this->sizeBoard = 0;
+		this->sizeBoard2 = 0;
 		this->GridStrings[0].push_back("To Do");		
 		this->GridStrings[0].push_back("In Progress");
 		this->GridStrings[0].push_back("Review");
@@ -31,6 +32,7 @@ public:
 	}
 	void AddTasker(std::string taskString);
 	
+	void AddTasker2(std::string taskString2);
 	//void TasktoProgress(ScrumBoard* Scrum){
 		
 	//	Scrum->MovesText->setText(std::to_string(Scrum->numMoves++));
@@ -38,8 +40,10 @@ public:
 
 
 	int sizeBoard = 0;
+	int sizeBoard2 = 0;
 	std::vector<std::vector<std::string> > GridStrings;
 	int flag = 0;	
+	int flag2 = 0;
 
 };
 #endif
