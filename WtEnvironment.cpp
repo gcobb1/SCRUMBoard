@@ -403,66 +403,68 @@ boardApplication::boardApplication(const Wt::WEnvironment& env)
 //		MovesText->setText(std::to_string(this->numMoves++));
 	//};
 	auto TaskAdder = [=]{
-		this->taskText = this->taskEdit->displayText();
-		this->taskTextStr = this->taskText.toUTF8();
-		if((taskTextStr == " ") || (taskTextStr == "")){
-			this->noGood = 1;
-		}
-		if(this->noGood == 0){
-
-			Sboard->AddTasker(taskTextStr);
-			if(Sboard->flag == 1){
-				this->AddTask(Sboard->GridStrings);
-				Sboard->flag = 0;
+		if(this->size < 100){
+			this->taskText = this->taskEdit->displayText();
+			this->taskTextStr = this->taskText.toUTF8();
+			if((taskTextStr == " ") || (taskTextStr == "")){
+				this->noGood = 1;
 			}
-			if(addFlagProg == 1){
-				
-		
-				//functors.push_back([this] { MovesText->setText(std::to_string(this->numMoves++)); });
-				//auto lambda = [this] {  MovesText->setText(std::to_string(this->numMoves++)); };
-				//vec1.push_back(lambda);
-				//this->TCells[this->size - 2]->clicked().connect(std::bind(functors[this->toDoCount]));
-				//if(this->toDoCount > 3){
-				if(this->size > 1){
-					this->Matrix1.clear();
-					//this->Matrix1.resize(Sboard->GridStrings.size());
-					//for(int cni = 0; cni < Matrix1.size(); cni++){
-					//	this->Matrix1[cni].resize(4);
-					//}
-					//for(int vecinc = 0; vecinc < Sboard->GridStrings.size(); vecinc++){
-					//	for(int vecinc2 = 0; vecinc2 < 4; vecinc2++){
-							this->Matrix1 = Sboard->GridStrings;
-					for(int incrementer = 1; incrementer < this->size; incrementer++){	
-						//indexClickedInc = incrementer;			
-								//this->TCells[incrementer]->clicked().connect(std::bind(functors[incrementer]));	
-						this->TCells[incrementer]->clicked().connect(std::bind(functors[incrementer], incrementer));	
-					}
-				//}
-				//if(this->size > 1){
-					for(int incrementer2 = 1; incrementer2 < this->size; incrementer2++){
-						this->TCells2[incrementer2]->clicked().connect(std::bind(functors2[incrementer2], incrementer2));
-					}
-					for(int incrementer3 = 1; incrementer3 < this->size; incrementer3++){
-						this->TCells3[incrementer3]->clicked().connect(std::bind(functors3[incrementer3], incrementer3));
-					}
-					for(int incrementer7 = 1; incrementer7 < this->size; incrementer7++){
-						this->TCells4[incrementer7]->clicked().connect(std::bind(functors4[incrementer7], incrementer7));
-					}
+			if(this->noGood == 0){
 
-
+				Sboard->AddTasker(taskTextStr);
+				if(Sboard->flag == 1){
+					this->AddTask(Sboard->GridStrings);
+					Sboard->flag = 0;
 				}
-					//this->TCells[this->size - 2]->clicked().connect(std::bind(functors[this->size - 2]));
-				//this->toDoCount++;
-				//this->TCells[this->size - 2]->clicked().connect(boost::bind<void>(TasktoProgress)());	
-				//this->TCells[this->size - 2]->clicked().connect(boost::bind(&ScrumBoard::TasktoProgress, i, j));
-				//this->TCells[this->size - 2]->clicked().connect(f1);			
-				//this->TCells[this->size - 2]->clicked().connect(boost::bind(boardApplication::TasktoProgress()));
-				addFlagProg = 0;
+				if(addFlagProg == 1){
+					
+			
+					//functors.push_back([this] { MovesText->setText(std::to_string(this->numMoves++)); });
+					//auto lambda = [this] {  MovesText->setText(std::to_string(this->numMoves++)); };
+					//vec1.push_back(lambda);
+					//this->TCells[this->size - 2]->clicked().connect(std::bind(functors[this->toDoCount]));
+					//if(this->toDoCount > 3){
+					if(this->size > 1){
+						this->Matrix1.clear();
+						//this->Matrix1.resize(Sboard->GridStrings.size());
+						//for(int cni = 0; cni < Matrix1.size(); cni++){
+						//	this->Matrix1[cni].resize(4);
+						//}
+						//for(int vecinc = 0; vecinc < Sboard->GridStrings.size(); vecinc++){
+						//	for(int vecinc2 = 0; vecinc2 < 4; vecinc2++){
+								this->Matrix1 = Sboard->GridStrings;
+						for(int incrementer = 1; incrementer < this->size; incrementer++){	
+							//indexClickedInc = incrementer;			
+									//this->TCells[incrementer]->clicked().connect(std::bind(functors[incrementer]));	
+							this->TCells[incrementer]->clicked().connect(std::bind(functors[incrementer], incrementer));	
+						}
+					//}
+					//if(this->size > 1){
+						for(int incrementer2 = 1; incrementer2 < this->size; incrementer2++){
+							this->TCells2[incrementer2]->clicked().connect(std::bind(functors2[incrementer2], incrementer2));
+						}
+						for(int incrementer3 = 1; incrementer3 < this->size; incrementer3++){
+							this->TCells3[incrementer3]->clicked().connect(std::bind(functors3[incrementer3], incrementer3));
+						}
+						for(int incrementer7 = 1; incrementer7 < this->size; incrementer7++){
+							this->TCells4[incrementer7]->clicked().connect(std::bind(functors4[incrementer7], incrementer7));
+						}
+
+
+					}
+						//this->TCells[this->size - 2]->clicked().connect(std::bind(functors[this->size - 2]));
+					//this->toDoCount++;
+					//this->TCells[this->size - 2]->clicked().connect(boost::bind<void>(TasktoProgress)());	
+					//this->TCells[this->size - 2]->clicked().connect(boost::bind(&ScrumBoard::TasktoProgress, i, j));
+					//this->TCells[this->size - 2]->clicked().connect(f1);			
+					//this->TCells[this->size - 2]->clicked().connect(boost::bind(boardApplication::TasktoProgress()));
+					addFlagProg = 0;
+				}
 			}
-		}
-		else{
-			//error message
-			this->noGood = 0;
+			else{
+				//error message
+				this->noGood = 0;
+			}
 		}
 	};
 	addButton->clicked().connect(std::bind(TaskAdder));
