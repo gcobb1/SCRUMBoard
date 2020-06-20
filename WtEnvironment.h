@@ -41,12 +41,18 @@ public:
                 this->MovesText->setText(std::to_string(this->numMoves++));
         }
         void ClearAddBlue(int numBlue);
-
-        void AddTask(std::vector<std::vector<std::string> > GridStrings);
+        void ClearAddBlue2(int numBlue); 
+        void ClearAddBlue3(int numBlue);
+        void ClearAddBlue4(int numBlue);
+	void AddTask(std::vector<std::vector<std::string> > GridStrings);
         void AddTask2(std::vector<std::vector<std::string> > GridStrings);
+        void AddTask3(std::vector<std::vector<std::string> > GridStrings);
+        void AddTask4(std::vector<std::vector<std::string> > GridStrings);
 protected:
         int size = 1;
 	int size2 = 1;
+	int size3 = 1;
+	int size4 = 1;
         Wt::WText *ToDo;
         Wt::WText *Doing;
         Wt::WText *Done;
@@ -56,12 +62,19 @@ protected:
         Wt::WLineEdit *taskEdit;
         Wt::WString taskText;
         Wt::WString taskText2;
+	Wt::WString taskText3;
         std::string taskTextStr;
         std::string taskTextStr2;
+	std::string taskTextStr3;
+	std::string taskTextStr4;
         std::vector<Wt::WTableCell *> TCells; 
         std::vector<Wt::WTableCell *> TCells2;
+        std::vector<Wt::WTableCell *> TCells3;
+        std::vector<Wt::WTableCell *> TCells4;
+	int noGood = 0;
 	int addFlagProg = 0;
         Wt::WText *MovesText;
+        Wt::WText *HeaderText;
 	int numMoves = 0;
 	int toDoCount = 0;
 	int indexClicked = 1;

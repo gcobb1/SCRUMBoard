@@ -23,13 +23,20 @@ void ScrumBoard::AddTasker(std::string taskString){
 	this->GridStrings[this->sizeBoard].push_back("");
 	this->GridStrings[this->sizeBoard].push_back("");
 	this->GridStrings[this->sizeBoard].push_back("");
+	for(int i = 0; i < sizeBoard; i++){
+		if((this->GridStrings[i][0] == "") || (this->GridStrings[i][0] == " ")){
+			this->GridStrings[i][0] = taskString;
+			this->GridStrings[this->sizeBoard][0] = " ";
+			break;
+		} 
+	}
 }
 
 void ScrumBoard::AddTasker2(std::string taskString2){
 	this->sizeBoard2 = this->sizeBoard2 + 1;
 	int pickedNum = 101;
 	for(int i = 1; i < this->GridStrings.size(); i++){
-		if(GridStrings[i][0] == taskString2){
+		if(this->GridStrings[i][0] == taskString2){
 			GridStrings[this->sizeBoard2][1] = taskString2;
 			pickedNum = i;
 			break;
@@ -37,20 +44,54 @@ void ScrumBoard::AddTasker2(std::string taskString2){
 		
 	}
 	if(pickedNum != 101){
-		for(int j  = (pickedNum + 1); j < this->GridStrings.size(); j++){ 
-			GridStrings[j - 1][0] = GridStrings[j][0];
-			if(j == (this->GridStrings.size() - 1)){
-				GridStrings[j][0] = " ";
-			}
+		GridStrings[pickedNum][0] = " ";
+		for(int j = pickedNum; j < (this->GridStrings.size() - 1); j++){
+			GridStrings[j][0] = GridStrings[(j + 1)][0];
 		}
+		GridStrings[(this->GridStrings.size() - 1)][0] = " ";
 	}
-	//this->GridStrings.resize(sizeBoard + 1);
 	this->flag2 = 1;
-	//this->GridStrings[this->sizeBoard].push_back(taskString);
-	//this->GridStrings[this->sizeBoard].push_back("");
-	//this->GridStrings[this->sizeBoard].push_back("");
-	//this->GridStrings[this->sizeBoard].push_back("");
 }
-
+void ScrumBoard::AddTasker3(std::string taskString3){
+	this->sizeBoard3 = this->sizeBoard3 + 1;
+	int pickedNum = 101;
+	for(int i = 1; i < this->GridStrings.size(); i++){
+		if(this->GridStrings[i][1] == taskString3){
+			GridStrings[this->sizeBoard3][2] = taskString3;
+			pickedNum = i;
+			break;
+		}
 		
+	}
+	if(pickedNum != 101){
+		GridStrings[pickedNum][1] = " ";
+		for(int j = pickedNum; j < (this->GridStrings.size() - 1); j++){
+			GridStrings[j][1] = GridStrings[(j + 1)][1];
+		}
+		GridStrings[(this->GridStrings.size() - 1)][1] = " ";
+		this->sizeBoard2 = this->sizeBoard2 - 1;
+	}
+	this->flag3 = 1;
+}
+void ScrumBoard::AddTasker4(std::string taskString4){
+	this->sizeBoard4 = this->sizeBoard4 + 1;
+	int pickedNum = 101;
+	for(int i = 1; i < this->GridStrings.size(); i++){
+		if(this->GridStrings[i][2] == taskString4){
+			GridStrings[this->sizeBoard4][3] = taskString4;
+			pickedNum = i;
+			break;
+		}
+		
+	}
+	if(pickedNum != 101){
+		GridStrings[pickedNum][2] = " ";
+		for(int j = pickedNum; j < (this->GridStrings.size() - 1); j++){
+			GridStrings[j][2] = GridStrings[(j + 1)][2];
+		}
+		GridStrings[(this->GridStrings.size() - 1)][2] = " ";
+		this->sizeBoard3 = this->sizeBoard3 - 1;
+	}
+	this->flag4 = 1;
+}
 

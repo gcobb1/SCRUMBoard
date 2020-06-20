@@ -1,9 +1,20 @@
 .body{
     background-color: lightgrey;
 }
+.Header1{
+	color: darkblue;
+	font-size: 35px;
+	margin-top: 7.5%;
+	width: 100%;
+	position: absolute;
+	text-align: center;
+}
 .container1{
-margin-top: 9%;
-left: 13%;
+margin-top: 40%;
+position: absolute;
+left: auto;
+right: 0px;
+width: 100%;
 height: 100%;
 
 }
@@ -22,10 +33,7 @@ position: absolute;
 left: 0%;
 }
 .movesStyle{
-font-size: 200%;
-color: black;
-bottom: 100px;
-
+display: none;
 }
 .Moves{
 
@@ -86,16 +94,16 @@ color: red;
 background-color: white;
 }
 .button4{
-background-color: lightblue;
-margin-top: -30%;
-margin-left: 35%;
+background-color: white;
+margin-top: 33%;
+left: 75%;
+width: 25%;
+
 border-width: 4px;
 border-color: darkblue;
-font-size: 25px;
+font-size: 8px;
 color: darkblue;
 position: absolute;
-padding-right: 22.75px;
-padding-left: 22.75px;
 }
 
 .button4:hover {
@@ -103,25 +111,29 @@ color: red;
 background-color: white;
 }
 .button3{
-background-color: lightblue;
-margin-top: -20%;
-margin-left: 35%;
+background-color: white;
+margin-top: 33%;
+left: 50%;
+width: 25%;
 border-width: 4px;
 border-color: darkblue;
-font-size: 25px;
+font-size: 8px;
 color: darkblue;
 position: absolute;
 }
+
 .button3:hover {
 color: red;
 background-color: white;
 }
 .button2{
 background-color: white;
-margin-top: 40%;
+margin-top: 33%;
+left: 25%;
+width: 25%;
 border-width: 4px;
 border-color: darkblue;
-font-size: 25px;
+font-size: 8px;
 color: darkblue;
 position: absolute;
 }
@@ -132,10 +144,12 @@ background-color: white;
 }
 .button1{
 background-color: white;
-margin-top: 10%;
+margin-top: 33%;
+left: 0%;
+width: 25%;
 border-width: 4px;
 border-color: darkblue;
-font-size: 25px;
+font-size: 8px;
 color: darkblue;
 position: absolute;
 }
@@ -145,14 +159,13 @@ background-color: white;
 }
 td {
 width: 20%;
-line-break: normal;
 text-align: center;
 border-width: 10px;
 Border-style: solid;
 padding-top:8%;
 padding-bottom:8%;
-padding-left: 6%;
-padding-right: 6%;
+padding-left: 3%;
+padding-right: 3%;
 }
 table {
     background-color : whitesmoke;  
@@ -170,11 +183,15 @@ table {
 	background-color: white;
 	color: darkblue;
 	position: absolute;
-	width: 20%;
-	height: 75px;
+	width: 100%;
+	height: 20px;
 	padding-top: 1%;
 	padding-bottom: 1%;
 	font-size: 150%;
+	left: 0px;
+	margin-top: 20%;
+	padding-right: 0px;
+	padding-left: 0px;	
 }	
 .newTask:hover {
 
@@ -183,12 +200,1092 @@ table {
 
 }
 .string-item{
-   font-size: 150%;
+   font-size: 13px;
+   word-wrap: break-word;
    text-align: center;
    border-style: solid;
    background-color: whitesmoke;
    border-width: 10px;
    margin-top: 0px;
    margin-right: 0px !important;
+}
+
+@media only screen and (min-width: 600px) {
+	.body{
+	    background-color: lightgrey;
+	}
+	.Header1{
+		color: darkblue;
+		font-size: 50px;
+		margin-top: 5.5%;
+		width: 100%;
+		position: absolute;
+		text-align: center;
+	}
+	.container1{
+	margin-top: 40%;
+	position: absolute;
+	left: auto;
+	right: 0px;
+	width: 100%;
+	height: 100%;
+
+	}
+
+	.Solved{
+	font-size: 60px;
+	text-decoration: bold;
+	color: blue;
+	margin-top: -40%;
+	border: solid;
+	padding-right: 20px;
+	padding-left: 20px;
+	border-width: 5px;
+	border-color: blue;
+	position: absolute;
+	left: 0%;
+	}
+	.movesStyle{
+	display: none;
+	}
+	.Moves{
+
+	color: darkblue;
+	font-size: 25px;
+	margin-top: -30%;
+	left: 20%;
+	border: solid;
+	padding-right: 5px;
+	padding-left: 5px;
+	border-width: 1px;
+	border-color: darkblue;
+	position: absolute;
+	}
+	.SolidMoves{
+
+	color: darkblue;
+	font-size: 25px;
+	text-decoration: bold;
+	margin-top: -30%;
+	left: 0%;
+	position: absolute;
+
+	}
+
+	.button6{
+	background-color: lightblue;
+	margin-top: -15%;
+	left: 0%;
+	border-width: 4px;
+	border-color: darkblue;
+	font-size: 25px;
+	color: darkblue;
+	position: absolute;
+	}
+
+	.button6:hover {
+	color: red;
+	background-color: white;
+	}
+	.button5{
+	background-color: lightblue;
+	margin-top: -24%;
+	left: 0%;
+	border-width: 4px;
+	border-color: darkblue;
+	font-size: 25px;
+	color: darkblue;
+	position: absolute;
+	padding-right: 77.5px;
+	padding-left: 77.5px;
+	padding-top: 14.5px;
+	padding-bottom:14.5px;
+	}
+
+	.button5:hover {
+	color: red;
+	background-color: white;
+	}
+	.button4{
+	background-color: white;
+	margin-top: 33%;
+	left: 75%;
+	width: 25%;
+	height: 10px;
+	border-width: 4px;
+	border-color: darkblue;
+	font-size: 14px;
+	color: darkblue;
+	position: absolute;
+	height: 30px;
+	}
+
+	.button4:hover {
+	color: red;
+	background-color: white;
+	}
+	.button3{
+	background-color: white;
+	margin-top: 33%;
+	left: 50%;
+	width: 25%;
+	height: 10px;
+	border-width: 4px;
+	border-color: darkblue;
+	font-size: 14px;
+	color: darkblue;
+	position: absolute;
+	
+	height: 30px;
+	}
+
+	.button3:hover {
+	color: red;
+	background-color: white;
+	}
+	.button2{
+	background-color: white;
+	margin-top: 33%;
+	left: 25%;
+	width: 25%;
+	height: 10px;
+	border-width: 4px;
+	border-color: darkblue;
+	font-size: 14px;
+	color: darkblue;
+	position: absolute;
+	
+	height: 30px;
+	}
+
+	.button2:hover {
+	color: red;
+	background-color: white;
+	}
+	.button1{
+	background-color: white;
+	margin-top: 33%;
+	left: 0%;
+	width: 25%;
+	height: 10px;
+	border-width: 4px;
+	border-color: darkblue;
+	font-size: 14px;
+	color: darkblue;
+	position: absolute;
+
+	height: 30px;
+	}
+	.button1:hover {
+	color: red;
+	background-color: white;
+	}
+	td {
+	width: 20%;
+	text-align: center;
+	border-width: 10px;
+	Border-style: solid;
+	padding-top:8%;
+	padding-bottom:8%;
+	padding-left: 3%;
+	padding-right: 3%;
+	}
+	table {
+	    background-color : whitesmoke;  
+	    color:darkblue;
+	    border-color: darkblue;
+	    border-style: solid;
+	    text-align: center;
+	    margin: 0 auto;
+	}
+	#t123{
+		background-color: darkblue !important;
+	}
+	.newTask{
+		background-color: white;
+		color: darkblue;
+		position: absolute;
+		width: 100%;
+		height: 20px;
+		padding-top: 1%;
+		padding-bottom: 1%;
+		font-size: 150%;
+		left: 0px;
+		margin-top: 20%;
+		padding-right: 0px;
+		padding-left: 0px;	
+	}	
+	.newTask:hover {
+
+		color: darkblue;
+		background-color: whitesmoke;
+
+	}
+	.string-item{
+	   font-size: 13px;
+	   word-wrap: break-word;
+	   text-align: center;
+	   border-style: solid;
+	   background-color: whitesmoke;
+	   border-width: 10px;
+	   margin-top: 0px;
+	   margin-right: 0px !important;
+	}
+}
+
+@media only screen and (min-width: 800px) {
+	.body{
+	    background-color: lightgrey;
+	}
+	.Header1{
+		color: darkblue;
+		font-size: 75px;
+		width: 75%;
+		position: absolute;
+		left: 22.5%;
+		text-align: initial;
+		margin-top: auto;
+	}
+	.container1{
+	margin-top: 20%;
+	position: absolute;
+	left: auto;
+	width: 100%;
+	height: 100%;
+
+	}
+
+	.Solved{
+	font-size: 60px;
+	text-decoration: bold;
+	color: blue;
+	margin-top: -40%;
+	border: solid;
+	padding-right: 20px;
+	padding-left: 20px;
+	border-width: 5px;
+	border-color: blue;
+	position: absolute;
+	left: 0%;
+	}
+	.movesStyle{
+	display: none;
+	}
+	.Moves{
+
+	color: darkblue;
+	font-size: 25px;
+	margin-top: -30%;
+	left: 20%;
+	border: solid;
+	padding-right: 5px;
+	padding-left: 5px;
+	border-width: 1px;
+	border-color: darkblue;
+	position: absolute;
+	}
+	.SolidMoves{
+
+	color: darkblue;
+	font-size: 25px;
+	text-decoration: bold;
+	margin-top: -30%;
+	left: 0%;
+	position: absolute;
+
+	}
+
+	.button6{
+	background-color: lightblue;
+	margin-top: -15%;
+	left: 0%;
+	border-width: 4px;
+	border-color: darkblue;
+	font-size: 25px;
+	color: darkblue;
+	position: absolute;
+	}
+
+	.button6:hover {
+	color: red;
+	background-color: white;
+	}
+	.button5{
+	background-color: lightblue;
+	margin-top: -24%;
+	left: 0%;
+	border-width: 4px;
+	border-color: darkblue;
+	font-size: 25px;
+	color: darkblue;
+	position: absolute;
+	padding-right: 77.5px;
+	padding-left: 77.5px;
+	padding-top: 14.5px;
+	padding-bottom:14.5px;
+	}
+
+	.button5:hover {
+	color: red;
+	background-color: white;
+	}
+	.button4{
+	background-color: white;
+	margin-top: 15%;
+	left: 75%;
+	width: 25%;
+	border-width: 4px;
+	border-color: darkblue;
+	font-size: 15px;
+	color: darkblue;
+	position: absolute;
+	}
+
+	.button4:hover {
+	color: red;
+	background-color: white;
+	}
+	.button3{
+	background-color: white;
+	margin-top: 15%;
+	left: 50%;
+	width: 25%;
+	border-width: 4px;
+	border-color: darkblue;
+	font-size: 15px;
+	color: darkblue;
+	position: absolute;
+	}
+
+	.button3:hover {
+	color: red;
+	background-color: white;
+	}
+	.button2{
+	background-color: white;
+	margin-top: 15%;
+	left: 25%;
+	width: 25%;
+	border-width: 4px;
+	border-color: darkblue;
+	font-size: 15px;
+	color: darkblue;
+	position: absolute;
+	}
+
+	.button2:hover {
+	color: red;
+	background-color: white;
+	}
+	.button1{
+	background-color: white;
+	margin-top: 15%;
+	left: 0%;
+	width: 25%;
+	border-width: 4px;
+	border-color: darkblue;
+	font-size: 15px;
+	color: darkblue;
+	position: absolute;
+	}
+	.button1:hover {
+	color: red;
+	background-color: white;
+	}
+	td {
+	width: 20%;
+	line-break: normal;
+	text-align: center;
+	border-width: 10px;
+	Border-style: solid;
+	padding-top:8%;
+	padding-bottom:8%;
+	padding-left: 6%;
+	padding-right: 6%;
+	}
+	table {
+	    background-color : whitesmoke;  
+	    color:darkblue;
+	    border-color: darkblue;
+	    border-style: solid;
+	    text-align: center;
+	    margin: 0 auto;
+	}
+	#t123{
+		background-color: darkblue !important;
+	}
+
+	.newTask{
+		background-color: white;
+		color: darkblue;
+		position: absolute;
+		width: 20%;
+		height: 75px;
+		padding-top: 1%;
+		padding-bottom: 1%;
+		font-size: 150%;
+		left: auto;
+		margin-top: auto;
+	}	
+	.newTask:hover {
+
+		color: darkblue;
+		background-color: whitesmoke;
+
+	}
+	.string-item{
+	   font-size: 150%;
+	   text-align: center;
+	   border-style: solid;
+	   background-color: whitesmoke;
+	   border-width: 10px;
+	   margin-top: 0px;
+	   margin-right: 0px !important;
+	}
+}
+
+@media only screen and (min-width: 1100px) {
+	.body{
+	    background-color: lightgrey;
+	}
+	.Header1{
+		color: darkblue;
+		font-size: 100px;
+		width: 75%;
+		position: absolute;
+		left: 22.5%;
+		text-align: initial;
+		margin-top: auto;
+	}
+	.container1{
+	margin-top: 20%;
+	position: absolute;
+	left: auto;
+	width: 100%;
+	height: 100%;
+
+	}
+
+	.Solved{
+	font-size: 60px;
+	text-decoration: bold;
+	color: blue;
+	margin-top: -40%;
+	border: solid;
+	padding-right: 20px;
+	padding-left: 20px;
+	border-width: 5px;
+	border-color: blue;
+	position: absolute;
+	left: 0%;
+	}
+	.movesStyle{
+	display: none;
+	}
+	.Moves{
+
+	color: darkblue;
+	font-size: 25px;
+	margin-top: -30%;
+	left: 20%;
+	border: solid;
+	padding-right: 5px;
+	padding-left: 5px;
+	border-width: 1px;
+	border-color: darkblue;
+	position: absolute;
+	}
+	.SolidMoves{
+
+	color: darkblue;
+	font-size: 25px;
+	text-decoration: bold;
+	margin-top: -30%;
+	left: 0%;
+	position: absolute;
+
+	}
+
+	.button6{
+	background-color: lightblue;
+	margin-top: -15%;
+	left: 0%;
+	border-width: 4px;
+	border-color: darkblue;
+	font-size: 25px;
+	color: darkblue;
+	position: absolute;
+	}
+
+	.button6:hover {
+	color: red;
+	background-color: white;
+	}
+	.button5{
+	background-color: lightblue;
+	margin-top: -24%;
+	left: 0%;
+	border-width: 4px;
+	border-color: darkblue;
+	font-size: 25px;
+	color: darkblue;
+	position: absolute;
+	padding-right: 77.5px;
+	padding-left: 77.5px;
+	padding-top: 14.5px;
+	padding-bottom:14.5px;
+	}
+
+	.button5:hover {
+	color: red;
+	background-color: white;
+	}
+	.button4{
+	background-color: white;
+	margin-top: 15%;
+	left: 75%;
+	width: 25%;
+	height: 40px;
+	border-width: 4px;
+	border-color: darkblue;
+	font-size: 20px;
+	color: darkblue;
+	position: absolute;
+	}
+
+	.button4:hover {
+	color: red;
+	background-color: white;
+	}
+	.button3{
+	background-color: white;
+	margin-top: 15%;
+	left: 50%;
+	width: 25%;
+	height: 40px;
+	border-width: 4px;
+	border-color: darkblue;
+	font-size: 20px;
+	color: darkblue;
+	position: absolute;
+	}
+
+	.button3:hover {
+	color: red;
+	background-color: white;
+	}
+	.button2{
+	background-color: white;
+	margin-top: 15%;
+	left: 25%;
+	width: 25%;
+	height: 40px;
+	border-width: 4px;
+	border-color: darkblue;
+	font-size: 20px;
+	color: darkblue;
+	position: absolute;
+	}
+
+	.button2:hover {
+	color: red;
+	background-color: white;
+	}
+	.button1{
+	background-color: white;
+	margin-top: 15%;
+	left: 0%;
+	width: 25%;
+	height: 40px;
+	border-width: 4px;
+	border-color: darkblue;
+	font-size: 20px;
+	color: darkblue;
+	position: absolute;
+	}
+	.button1:hover {
+	color: red;
+	background-color: white;
+	}
+	td {
+	width: 20%;
+	line-break: normal;
+	text-align: center;
+	border-width: 10px;
+	Border-style: solid;
+	padding-top:8%;
+	padding-bottom:8%;
+	padding-left: 6%;
+	padding-right: 6%;
+	}
+	table {
+	    background-color : whitesmoke;  
+	    color:darkblue;
+	    border-color: darkblue;
+	    border-style: solid;
+	    text-align: center;
+	    margin: 0 auto;
+	}
+	#t123{
+		background-color: darkblue !important;
+	}
+
+	.newTask{
+		background-color: white;
+		color: darkblue;
+		position: absolute;
+		width: 20%;
+		height: 75px;
+		padding-top: 1%;
+		padding-bottom: 1%;
+		font-size: 150%;
+		left: auto;
+		margin-top: auto;
+	}	
+	.newTask:hover {
+
+		color: darkblue;
+		background-color: whitesmoke;
+
+	}
+	.string-item{
+	   font-size: 150%;
+	   text-align: center;
+	   border-style: solid;
+	   background-color: whitesmoke;
+	   border-width: 10px;
+	   margin-top: 0px;
+	   margin-right: 0px !important;
+	}
+}
+
+@media only screen and (min-width: 1460px) {
+	.body{
+	    background-color: lightgrey;
+	}
+	.Header1{
+		color: darkblue;
+		font-size: 139px;
+		width: 75%;
+		position: absolute;
+		left: 22.5%;
+		text-align: initial;
+		margin-top: auto;
+	}
+	.container1{
+	margin-top: 20%;
+	position: absolute;
+	left: auto;
+	width: 100%;
+	height: 100%;
+
+	}
+
+	.Solved{
+	font-size: 60px;
+	text-decoration: bold;
+	color: blue;
+	margin-top: -40%;
+	border: solid;
+	padding-right: 20px;
+	padding-left: 20px;
+	border-width: 5px;
+	border-color: blue;
+	position: absolute;
+	left: 0%;
+	}
+	.movesStyle{
+	display: none;
+	}
+	.Moves{
+
+	color: darkblue;
+	font-size: 25px;
+	margin-top: -30%;
+	left: 20%;
+	border: solid;
+	padding-right: 5px;
+	padding-left: 5px;
+	border-width: 1px;
+	border-color: darkblue;
+	position: absolute;
+	}
+	.SolidMoves{
+
+	color: darkblue;
+	font-size: 25px;
+	text-decoration: bold;
+	margin-top: -30%;
+	left: 0%;
+	position: absolute;
+
+	}
+
+	.button6{
+	background-color: lightblue;
+	margin-top: -15%;
+	left: 0%;
+	border-width: 4px;
+	border-color: darkblue;
+	font-size: 25px;
+	color: darkblue;
+	position: absolute;
+	}
+
+	.button6:hover {
+	color: red;
+	background-color: white;
+	}
+	.button5{
+	background-color: lightblue;
+	margin-top: -24%;
+	left: 0%;
+	border-width: 4px;
+	border-color: darkblue;
+	font-size: 25px;
+	color: darkblue;
+	position: absolute;
+	padding-right: 77.5px;
+	padding-left: 77.5px;
+	padding-top: 14.5px;
+	padding-bottom:14.5px;
+	}
+
+	.button5:hover {
+	color: red;
+	background-color: white;
+	}
+	.button4{
+	background-color: white;
+	margin-top: 15%;
+	left: 75%;
+	width: 25%;
+	height: 40px;
+	border-width: 4px;
+	border-color: darkblue;
+	font-size: 20px;
+	color: darkblue;
+	position: absolute;
+	}
+
+	.button4:hover {
+	color: red;
+	background-color: white;
+	}
+	.button3{
+	background-color: white;
+	margin-top: 15%;
+	left: 50%;
+	width: 25%;
+	height: 40px;
+	border-width: 4px;
+	border-color: darkblue;
+	font-size: 20px;
+	color: darkblue;
+	position: absolute;
+	}
+
+	.button3:hover {
+	color: red;
+	background-color: white;
+	}
+	.button2{
+	background-color: white;
+	margin-top: 15%;
+	left: 25%;
+	width: 25%;
+	height: 40px;
+	border-width: 4px;
+	border-color: darkblue;
+	font-size: 20px;
+	color: darkblue;
+	position: absolute;
+	}
+
+	.button2:hover {
+	color: red;
+	background-color: white;
+	}
+	.button1{
+	background-color: white;
+	margin-top: 15%;
+	left: 0%;
+	width: 25%;
+	height: 40px;
+	border-width: 4px;
+	border-color: darkblue;
+	font-size: 20px;
+	color: darkblue;
+	position: absolute;
+	}
+	.button1:hover {
+	color: red;
+	background-color: white;
+	}
+	td {
+	width: 20%;
+	line-break: normal;
+	text-align: center;
+	border-width: 10px;
+	Border-style: solid;
+	padding-top:8%;
+	padding-bottom:8%;
+	padding-left: 6%;
+	padding-right: 6%;
+	}
+	table {
+	    background-color : whitesmoke;  
+	    color:darkblue;
+	    border-color: darkblue;
+	    border-style: solid;
+	    text-align: center;
+	    margin: 0 auto;
+	}
+	#t123{
+		background-color: darkblue !important;
+	}
+
+	.newTask{
+		background-color: white;
+		color: darkblue;
+		position: absolute;
+		width: 20%;
+		height: 75px;
+		padding-top: 1%;
+		padding-bottom: 1%;
+		font-size: 150%;
+		left: auto;
+		margin-top: auto;
+	}	
+	.newTask:hover {
+
+		color: darkblue;
+		background-color: whitesmoke;
+
+	}
+	.string-item{
+	   font-size: 150%;
+	   text-align: center;
+	   border-style: solid;
+	   background-color: whitesmoke;
+	   border-width: 10px;
+	   margin-top: 0px;
+	   margin-right: 0px !important;
+	}
+}
+
+@media only screen and (min-width: 2000px) {
+	.body{
+	    background-color: lightgrey;
+	}
+	.Header1{
+		color: darkblue;
+		font-size: 175px;
+		width: 75%;
+		position: absolute;
+		left: 22.5%;
+		text-align: initial;
+		margin-top: auto;
+	}
+	.container1{
+	margin-top: 20%;
+	position: absolute;
+	left: auto;
+	width: 100%;
+	height: 100%;
+
+	}
+
+	.Solved{
+	font-size: 60px;
+	text-decoration: bold;
+	color: blue;
+	margin-top: -40%;
+	border: solid;
+	padding-right: 20px;
+	padding-left: 20px;
+	border-width: 5px;
+	border-color: blue;
+	position: absolute;
+	left: 0%;
+	}
+	.movesStyle{
+	display: none;
+	}
+	.Moves{
+
+	color: darkblue;
+	font-size: 25px;
+	margin-top: -30%;
+	left: 20%;
+	border: solid;
+	padding-right: 5px;
+	padding-left: 5px;
+	border-width: 1px;
+	border-color: darkblue;
+	position: absolute;
+	}
+	.SolidMoves{
+
+	color: darkblue;
+	font-size: 25px;
+	text-decoration: bold;
+	margin-top: -30%;
+	left: 0%;
+	position: absolute;
+
+	}
+
+	.button6{
+	background-color: lightblue;
+	margin-top: -15%;
+	left: 0%;
+	border-width: 4px;
+	border-color: darkblue;
+	font-size: 25px;
+	color: darkblue;
+	position: absolute;
+	}
+
+	.button6:hover {
+	color: red;
+	background-color: white;
+	}
+	.button5{
+	background-color: lightblue;
+	margin-top: -24%;
+	left: 0%;
+	border-width: 4px;
+	border-color: darkblue;
+	font-size: 25px;
+	color: darkblue;
+	position: absolute;
+	padding-right: 77.5px;
+	padding-left: 77.5px;
+	padding-top: 14.5px;
+	padding-bottom:14.5px;
+	}
+
+	.button5:hover {
+	color: red;
+	background-color: white;
+	}
+	.button4{
+	background-color: white;
+	margin-top: 15%;
+	left: 75%;
+	width: 25%;
+	height: 40px;
+	border-width: 4px;
+	border-color: darkblue;
+	font-size: 20px;
+	color: darkblue;
+	position: absolute;
+	}
+
+	.button4:hover {
+	color: red;
+	background-color: white;
+	}
+	.button3{
+	background-color: white;
+	margin-top: 15%;
+	left: 50%;
+	width: 25%;
+	height: 40px;
+	border-width: 4px;
+	border-color: darkblue;
+	font-size: 20px;
+	color: darkblue;
+	position: absolute;
+	}
+
+	.button3:hover {
+	color: red;
+	background-color: white;
+	}
+	.button2{
+	background-color: white;
+	margin-top: 15%;
+	left: 25%;
+	width: 25%;
+	height: 40px;
+	border-width: 4px;
+	border-color: darkblue;
+	font-size: 20px;
+	color: darkblue;
+	position: absolute;
+	}
+
+	.button2:hover {
+	color: red;
+	background-color: white;
+	}
+	.button1{
+	background-color: white;
+	margin-top: 15%;
+	left: 0%;
+	width: 25%;
+	height: 40px;
+	border-width: 4px;
+	border-color: darkblue;
+	font-size: 20px;
+	color: darkblue;
+	position: absolute;
+	}
+	.button1:hover {
+	color: red;
+	background-color: white;
+	}
+	td {
+	width: 20%;
+	line-break: normal;
+	text-align: center;
+	border-width: 10px;
+	Border-style: solid;
+	padding-top:8%;
+	padding-bottom:8%;
+	padding-left: 6%;
+	padding-right: 6%;
+	}
+	table {
+	    background-color : whitesmoke;  
+	    color:darkblue;
+	    border-color: darkblue;
+	    border-style: solid;
+	    text-align: center;
+	    margin: 0 auto;
+	}
+	#t123{
+		background-color: darkblue !important;
+	}
+
+	.newTask{
+		background-color: white;
+		color: darkblue;
+		position: absolute;
+		width: 20%;
+		height: 75px;
+		padding-top: 1%;
+		padding-bottom: 1%;
+		font-size: 150%;
+		left: auto;
+		margin-top: auto;
+	}	
+	.newTask:hover {
+
+		color: darkblue;
+		background-color: whitesmoke;
+
+	}
+	.string-item{
+	   font-size: 150%;
+	   text-align: center;
+	   border-style: solid;
+	   background-color: whitesmoke;
+	   border-width: 10px;
+	   margin-top: 0px;
+	   margin-right: 0px !important;
+	}
 }
 
