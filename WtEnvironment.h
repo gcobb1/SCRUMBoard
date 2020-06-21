@@ -16,6 +16,7 @@ backend of the board object created
 #include <Wt/WBreak.h>
 #include <Wt/WContainerWidget.h>
 #include <Wt/WLineEdit.h>
+#include <Wt/WImage.h>
 #include <Wt/WPushButton.h>
 #include <Wt/WText.h>
 #include <Wt/WTableCell.h>
@@ -56,6 +57,9 @@ protected:
         Wt::WText *ToDo;
         Wt::WText *Doing;
         Wt::WText *Done;
+	Wt::WText *IntroText;
+	Wt::WImage *image;
+	Wt::WImage *image2;
         //Wt::WLineEdit *taskEdit_;
         Wt::WTable *table;
         Wt::WColor *Color;
@@ -73,6 +77,7 @@ protected:
         std::vector<Wt::WTableCell *> TCells4;
 	int noGood = 0;
 	int addFlagProg = 0;
+	int introFlag = 1;
         Wt::WText *MovesText;
         Wt::WText *HeaderText;
 	int numMoves = 0;

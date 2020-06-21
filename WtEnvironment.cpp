@@ -11,6 +11,7 @@
 #include <Wt/WText.h>
 #include <Wt/WTableCell.h>
 #include <Wt/WTable.h>
+#include <Wt/WImage.h>
 #include <string>
 #include <vector>
 #include <iostream>
@@ -215,6 +216,7 @@ boardApplication::boardApplication(const Wt::WEnvironment& env)
 	Wt::WPushButton *addButton4 = root()->addWidget(std::make_unique<Wt::WPushButton>("Add To: Done"));
 	addButton4->setStyleClass("button4");
 
+	
 	Wt::WContainerWidget *w2 = root()->addWidget(std::make_unique<Wt::WContainerWidget>());
 	w2->setContentAlignment(Wt::AlignmentFlag::Center);
 	w2->setStyleClass("container1");
@@ -222,6 +224,7 @@ boardApplication::boardApplication(const Wt::WEnvironment& env)
 	this->TCells2.resize(100);	
 	this->TCells3.resize(100);	
 	this->TCells4.resize(100);
+
 	table = w2->addWidget(std::make_unique<Wt::WTable>());
 	table->setHeaderCount(0);
 	table->setWidth(Wt::WLength("100%"));
@@ -251,6 +254,28 @@ boardApplication::boardApplication(const Wt::WEnvironment& env)
 	}
 	table->setStyleClass("string-item");
 	table->addStyleClass("table-bordered");
+	
+	//introduction helper text logic
+	image = root()->addWidget(std::make_unique<Wt::WImage>("https://piskel-imgstore-b.appspot.com/img/e0f74185-9fa1-11ea-b04a-fbf190883c80.gif"));
+	image2 = root()->addWidget(std::make_unique<Wt::WImage>("https://piskel-imgstore-b.appspot.com/img/511461a6-9fa2-11ea-9bfc-fbf190883c80.gif"));
+	image->setStyleClass("intro");
+	image2->setStyleClass("intro2");
+
+	IntroText = w2-> addWidget(std::make_unique<Wt::WText>("Enter your task and add it with \"Add To: To Do\". Then click the task to highlight it and move it to other columns!"));
+	IntroText->setWordWrap(true);
+	IntroText->setStyleClass("IntroText");
+	if(this->introFlag == 1){
+		IntroText->show();
+		image->show();
+		image2->show();
+	}
+	else{
+		IntroText->hide();
+		image->hide();
+		image2->hide();
+}
+
+
 
 	ScrumBoard *Sboard = new ScrumBoard();
 	//static std::vector<std::function<void(int)>> functors;
@@ -404,6 +429,12 @@ boardApplication::boardApplication(const Wt::WEnvironment& env)
 	//};
 	auto TaskAdder = [=]{
 		if(this->size < 100){
+			if(introFlag == 1){
+                                introFlag = 0;
+	                        IntroText->hide();
+				image2->hide();
+                        	image->hide();
+                        }
 			this->taskText = this->taskEdit->displayText();
 			this->taskTextStr = this->taskText.toUTF8();
 			if((taskTextStr == " ") || (taskTextStr == "")){

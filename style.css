@@ -1,5 +1,5 @@
 .body{
-    background-color: lightgrey;
+	background-color: lightgrey;
 }
 .Header1{
 	color: darkblue;
@@ -10,170 +10,167 @@
 	text-align: center;
 }
 .container1{
-margin-top: 40%;
-position: absolute;
-left: auto;
-right: 0px;
-width: 100%;
-height: 100%;
+	margin-top: 40%;
+	position: absolute;
+	left: auto;
+	right: 0px;
+	width: 100%;
+	height: 100%;
 
 }
 
 .Solved{
-font-size: 60px;
-text-decoration: bold;
-color: blue;
-margin-top: -40%;
-border: solid;
-padding-right: 20px;
-padding-left: 20px;
-border-width: 5px;
-border-color: blue;
-position: absolute;
-left: 0%;
+	font-size: 60px;
+	text-decoration: bold;
+	color: blue;
+	margin-top: -40%;
+	border: solid;
+	padding-right: 20px;
+	padding-left: 20px;
+	border-width: 5px;
+	border-color: blue;
+	position: absolute;
+	left: 0%;
 }
 .movesStyle{
-display: none;
+	display: none;
 }
 .Moves{
-
-color: darkblue;
-font-size: 25px;
-margin-top: -30%;
-left: 20%;
-border: solid;
-padding-right: 5px;
-padding-left: 5px;
-border-width: 1px;
-border-color: darkblue;
-position: absolute;
+	color: darkblue;
+	font-size: 25px;
+	margin-top: -30%;
+	left: 20%;
+	border: solid;
+	padding-right: 5px;
+	padding-left: 5px;
+	border-width: 1px;
+	border-color: darkblue;
+	position: absolute;
 }
 .SolidMoves{
-
-color: darkblue;
-font-size: 25px;
-text-decoration: bold;
-margin-top: -30%;
-left: 0%;
-position: absolute;
+	color: darkblue;
+	font-size: 25px;
+	text-decoration: bold;
+	margin-top: -30%;
+	left: 0%;
+	position: absolute;
 
 }
 
 .button6{
-background-color: lightblue;
-margin-top: -15%;
-left: 0%;
-border-width: 4px;
-border-color: darkblue;
-font-size: 25px;
-color: darkblue;
-position: absolute;
+	background-color: lightblue;
+	margin-top: -15%;
+	left: 0%;
+	border-width: 4px;
+	border-color: darkblue;
+	font-size: 25px;
+	color: darkblue;
+	position: absolute;
 }
 
 .button6:hover {
-color: red;
-background-color: white;
+	color: red;
+	background-color: white;
 }
 .button5{
-background-color: lightblue;
-margin-top: -24%;
-left: 0%;
-border-width: 4px;
-border-color: darkblue;
-font-size: 25px;
-color: darkblue;
-position: absolute;
-padding-right: 77.5px;
-padding-left: 77.5px;
-padding-top: 14.5px;
-padding-bottom:14.5px;
+	background-color: lightblue;
+	margin-top: -24%;
+	left: 0%;
+	border-width: 4px;
+	border-color: darkblue;
+	font-size: 25px;
+	color: darkblue;
+	position: absolute;
+	padding-right: 77.5px;
+	padding-left: 77.5px;
+	padding-top: 14.5px;
+	padding-bottom:14.5px;
 }
 
 .button5:hover {
-color: red;
-background-color: white;
+	color: red;
+	background-color: white;
 }
 .button4{
-background-color: white;
-margin-top: 33%;
-left: 75%;
-width: 25%;
-
-border-width: 4px;
-border-color: darkblue;
-font-size: 8px;
-color: darkblue;
-position: absolute;
+	background-color: white;
+	margin-top: 33%;
+	left: 75%;
+	width: 25%;
+	border-width: 4px;
+	border-color: darkblue;
+	font-size: 8px;
+	color: darkblue;
+	position: absolute;
 }
 
 .button4:hover {
-color: red;
-background-color: white;
+	color: red;
+	background-color: white;
 }
 .button3{
-background-color: white;
-margin-top: 33%;
-left: 50%;
-width: 25%;
-border-width: 4px;
-border-color: darkblue;
-font-size: 8px;
-color: darkblue;
-position: absolute;
+	background-color: white;
+	margin-top: 33%;
+	left: 50%;
+	width: 25%;
+	border-width: 4px;
+	border-color: darkblue;
+	font-size: 8px;
+	color: darkblue;
+	position: absolute;
 }
 
 .button3:hover {
-color: red;
-background-color: white;
+	color: red;
+	background-color: white;
 }
 .button2{
-background-color: white;
-margin-top: 33%;
-left: 25%;
-width: 25%;
-border-width: 4px;
-border-color: darkblue;
-font-size: 8px;
-color: darkblue;
-position: absolute;
+	background-color: white;
+	margin-top: 33%;
+	left: 25%;
+	width: 25%;
+	border-width: 4px;
+	border-color: darkblue;
+	font-size: 8px;
+	color: darkblue;
+	position: absolute;
 }
 
 .button2:hover {
-color: red;
-background-color: white;
+	color: red;
+	background-color: white;
 }
 .button1{
-background-color: white;
-margin-top: 33%;
-left: 0%;
-width: 25%;
-border-width: 4px;
-border-color: darkblue;
-font-size: 8px;
-color: darkblue;
-position: absolute;
+	background-color: white;
+	margin-top: 33%;
+	left: 0%;
+	width: 25%;
+	border-width: 4px;
+	border-color: darkblue;
+	font-size: 8px;
+	color: darkblue;
+	position: absolute;
 }
 .button1:hover {
-color: red;
-background-color: white;
+	color: red;
+	background-color: white;
 }
 td {
-width: 20%;
-text-align: center;
-border-width: 10px;
-Border-style: solid;
-padding-top:8%;
-padding-bottom:8%;
-padding-left: 3%;
-padding-right: 3%;
+	width: 20%;
+	text-align: center;
+	border-width: 10px;
+	Border-style: solid;
+	padding-top:8%;
+	padding-bottom:8%;
+	padding-left: 3%;
+	padding-right: 3%;
 }
 table {
-    background-color : whitesmoke;  
-    color:darkblue;
-    border-color: darkblue;
-    border-style: solid;
-    text-align: center;
-    margin: 0 auto;
+	background-color : whitesmoke;  
+	color:darkblue;
+	border-color: darkblue;
+	border-style: solid;
+	text-align: center;
+	margin: 0 auto;
 }
 #t123{
 	background-color: darkblue !important;
@@ -200,15 +197,40 @@ table {
 
 }
 .string-item{
-   font-size: 13px;
-   word-wrap: break-word;
-   text-align: center;
-   border-style: solid;
-   background-color: whitesmoke;
-   border-width: 10px;
-   margin-top: 0px;
-   margin-right: 0px !important;
+	font-size: 13px;
+	word-wrap: break-word;
+	text-align: center;
+	border-style: solid;
+	background-color: whitesmoke;
+	border-width: 10px;
+	margin-top: 0px;
+	margin-right: 0px !important;
 }
+	.intro{
+		position: absolute;
+		left: 20%;
+		width: 10%;
+		margin-top: 33%;
+	}
+	.intro2{
+		position: absolute;
+		left: 5%;
+		width: 6%;
+		margin-top: 10%;
+		transform: scaleY(1);
+	}
+	.IntroText{
+		position: absolute;
+		color: darkblue;
+		width: 25%;
+		font-size: 20px;
+		background-color: #d6e3ff;
+		left: 0%;
+		border: solid;
+		border-width: 4px;
+		border-color: darkblue;
+		position: absolute;
+	}
 
 @media only screen and (min-width: 600px) {
 	.body{
@@ -431,8 +453,33 @@ table {
 	   margin-top: 0px;
 	   margin-right: 0px !important;
 	}
-}
+	.intro{
+		position: absolute;
+		left: 20%;
+		width: 10%;
+		margin-top: 33%;
+	}
+	.intro2{
+		position: absolute;
+		left: 5%;
+		width: 6%;
+		margin-top: 10%;
+		transform: scaleY(1);
+	}
+	.IntroText{
+		position: absolute;
+		color: darkblue;
+		width: 25%;
+		font-size: 20px;
+		background-color: #d6e3ff;
+		left: 0%;
+		border: solid;
+		border-width: 4px;
+		border-color: darkblue;
+		position: absolute;
+	}
 
+}
 @media only screen and (min-width: 800px) {
 	.body{
 	    background-color: lightgrey;
@@ -642,6 +689,270 @@ table {
 	   margin-top: 0px;
 	   margin-right: 0px !important;
 	}
+	.intro{
+		position: absolute;
+		left: 20%;
+		width: 7%;
+		margin-top: 15%;
+	}
+	.intro2{
+		position: absolute;
+		left: 5%;
+		width: 4%;
+		margin-top: 9%;
+		transform: scaleY(-1);
+	}
+	.IntroText{
+		position: absolute;
+		color: darkblue;
+		width: 25%;
+		font-size: 20px;
+		background-color: #d6e3ff;
+		left: 0%;
+		border: solid;
+		border-width: 4px;
+		border-color: darkblue;
+		position: absolute;
+	}
+
+}
+
+
+@media only screen and (min-width: 900px) {
+	.body{
+	    background-color: lightgrey;
+	}
+	.Header1{
+		color: darkblue;
+		font-size: 75px;
+		width: 75%;
+		position: absolute;
+		left: 22.5%;
+		text-align: initial;
+		margin-top: auto;
+	}
+	.container1{
+	margin-top: 20%;
+	position: absolute;
+	left: auto;
+	width: 100%;
+	height: 100%;
+
+	}
+
+	.Solved{
+	font-size: 60px;
+	text-decoration: bold;
+	color: blue;
+	margin-top: -40%;
+	border: solid;
+	padding-right: 20px;
+	padding-left: 20px;
+	border-width: 5px;
+	border-color: blue;
+	position: absolute;
+	left: 0%;
+	}
+	.movesStyle{
+	display: none;
+	}
+	.Moves{
+
+	color: darkblue;
+	font-size: 25px;
+	margin-top: -30%;
+	left: 20%;
+	border: solid;
+	padding-right: 5px;
+	padding-left: 5px;
+	border-width: 1px;
+	border-color: darkblue;
+	position: absolute;
+	}
+	.SolidMoves{
+
+	color: darkblue;
+	font-size: 25px;
+	text-decoration: bold;
+	margin-top: -30%;
+	left: 0%;
+	position: absolute;
+
+	}
+
+	.button6{
+	background-color: lightblue;
+	margin-top: -15%;
+	left: 0%;
+	border-width: 4px;
+	border-color: darkblue;
+	font-size: 25px;
+	color: darkblue;
+	position: absolute;
+	}
+
+	.button6:hover {
+	color: red;
+	background-color: white;
+	}
+	.button5{
+	background-color: lightblue;
+	margin-top: -24%;
+	left: 0%;
+	border-width: 4px;
+	border-color: darkblue;
+	font-size: 25px;
+	color: darkblue;
+	position: absolute;
+	padding-right: 77.5px;
+	padding-left: 77.5px;
+	padding-top: 14.5px;
+	padding-bottom:14.5px;
+	}
+
+	.button5:hover {
+	color: red;
+	background-color: white;
+	}
+	.button4{
+	background-color: white;
+	margin-top: 15%;
+	left: 75%;
+	width: 25%;
+	border-width: 4px;
+	border-color: darkblue;
+	font-size: 15px;
+	color: darkblue;
+	position: absolute;
+	}
+
+	.button4:hover {
+	color: red;
+	background-color: white;
+	}
+	.button3{
+	background-color: white;
+	margin-top: 15%;
+	left: 50%;
+	width: 25%;
+	border-width: 4px;
+	border-color: darkblue;
+	font-size: 15px;
+	color: darkblue;
+	position: absolute;
+	}
+
+	.button3:hover {
+	color: red;
+	background-color: white;
+	}
+	.button2{
+	background-color: white;
+	margin-top: 15%;
+	left: 25%;
+	width: 25%;
+	border-width: 4px;
+	border-color: darkblue;
+	font-size: 15px;
+	color: darkblue;
+	position: absolute;
+	}
+
+	.button2:hover {
+	color: red;
+	background-color: white;
+	}
+	.button1{
+	background-color: white;
+	margin-top: 15%;
+	left: 0%;
+	width: 25%;
+	border-width: 4px;
+	border-color: darkblue;
+	font-size: 15px;
+	color: darkblue;
+	position: absolute;
+	}
+	.button1:hover {
+	color: red;
+	background-color: white;
+	}
+	td {
+	width: 20%;
+	line-break: normal;
+	text-align: center;
+	border-width: 10px;
+	Border-style: solid;
+	padding-top:8%;
+	padding-bottom:8%;
+	padding-left: 6%;
+	padding-right: 6%;
+	}
+	table {
+	    background-color : whitesmoke;  
+	    color:darkblue;
+	    border-color: darkblue;
+	    border-style: solid;
+	    text-align: center;
+	    margin: 0 auto;
+	}
+	#t123{
+		background-color: darkblue !important;
+	}
+
+	.newTask{
+		background-color: white;
+		color: darkblue;
+		position: absolute;
+		width: 20%;
+		height: 75px;
+		padding-top: 1%;
+		padding-bottom: 1%;
+		font-size: 150%;
+		left: auto;
+		margin-top: auto;
+	}	
+	.newTask:hover {
+
+		color: darkblue;
+		background-color: whitesmoke;
+
+	}
+	.string-item{
+	   font-size: 150%;
+	   text-align: center;
+	   border-style: solid;
+	   background-color: whitesmoke;
+	   border-width: 10px;
+	   margin-top: 0px;
+	   margin-right: 0px !important;
+	}
+	.intro{
+		position: absolute;
+		left: 20%;
+		width: 7%;
+		margin-top: 15%;
+	}
+	.intro2{
+		position: absolute;
+		left: 5%;
+		width: 4%;
+		margin-top: 9%;
+		transform: scaleY(-1);
+	}
+	.IntroText{
+		position: absolute;
+		color: darkblue;
+		width: 25%;
+		font-size: 20px;
+		background-color: #d6e3ff;
+		left: 0%;
+		border: solid;
+		border-width: 4px;
+		border-color: darkblue;
+		position: absolute;
+	}
+
 }
 
 @media only screen and (min-width: 1100px) {
@@ -857,6 +1168,32 @@ table {
 	   margin-top: 0px;
 	   margin-right: 0px !important;
 	}
+	.intro{
+		position: absolute;
+		left: 20%;
+		width: 7%;
+		margin-top: 15%;
+	}
+	.intro2{
+		position: absolute;
+		left: 5%;
+		width: 4%;
+		margin-top: 9%;
+		transform: scaleY(-1);
+	}
+	.IntroText{
+		position: absolute;
+		color: darkblue;
+		width: 25%;
+		font-size: 20px;
+		background-color: #d6e3ff;
+		left: 0%;
+		border: solid;
+		border-width: 4px;
+		border-color: darkblue;
+		position: absolute;
+	}
+
 }
 
 @media only screen and (min-width: 1460px) {
@@ -1072,6 +1409,32 @@ table {
 	   margin-top: 0px;
 	   margin-right: 0px !important;
 	}
+	.intro{
+		position: absolute;
+		left: 20%;
+		width: 7%;
+		margin-top: 15%;
+	}
+	.intro2{
+		position: absolute;
+		left: 5%;
+		width: 4%;
+		margin-top: 9%;
+		transform: scaleY(-1);
+	}
+	.IntroText{
+		position: absolute;
+		color: darkblue;
+		width: 25%;
+		font-size: 20px;
+		background-color: #d6e3ff;
+		left: 0%;
+		border: solid;
+		border-width: 4px;
+		border-color: darkblue;
+		position: absolute;
+	}
+
 }
 
 @media only screen and (min-width: 2000px) {
@@ -1175,7 +1538,7 @@ table {
 	margin-top: 15%;
 	left: 75%;
 	width: 25%;
-	height: 40px;
+	height: 100px;
 	border-width: 4px;
 	border-color: darkblue;
 	font-size: 20px;
@@ -1192,7 +1555,7 @@ table {
 	margin-top: 15%;
 	left: 50%;
 	width: 25%;
-	height: 40px;
+	height: 100px;
 	border-width: 4px;
 	border-color: darkblue;
 	font-size: 20px;
@@ -1209,7 +1572,7 @@ table {
 	margin-top: 15%;
 	left: 25%;
 	width: 25%;
-	height: 40px;
+	height: 100px;
 	border-width: 4px;
 	border-color: darkblue;
 	font-size: 20px;
@@ -1226,7 +1589,7 @@ table {
 	margin-top: 15%;
 	left: 0%;
 	width: 25%;
-	height: 40px;
+	height: 100px;
 	border-width: 4px;
 	border-color: darkblue;
 	font-size: 20px;
@@ -1249,12 +1612,12 @@ table {
 	padding-right: 6%;
 	}
 	table {
-	    background-color : whitesmoke;  
-	    color:darkblue;
-	    border-color: darkblue;
-	    border-style: solid;
-	    text-align: center;
-	    margin: 0 auto;
+		background-color : whitesmoke;  
+		color:darkblue;
+		border-color: darkblue;
+		border-style: solid;
+		text-align: center;
+		margin: 0 auto;
 	}
 	#t123{
 		background-color: darkblue !important;
@@ -1279,13 +1642,36 @@ table {
 
 	}
 	.string-item{
-	   font-size: 150%;
-	   text-align: center;
-	   border-style: solid;
-	   background-color: whitesmoke;
-	   border-width: 10px;
-	   margin-top: 0px;
-	   margin-right: 0px !important;
+		font-size: 150%;
+		text-align: center;
+		border-style: solid;
+		background-color: whitesmoke;
+		border-width: 10px;
+		margin-top: 0px;
+		margin-right: 0px !important;
 	}
+	.intro{
+		position: absolute;
+		left: 20%;
+	}
+	.intro2{
+		position: absolute;
+		left: 5%;
+		margin-top: 5%;
+		transform: scaleY(-1);
+	}
+	.IntroText{
+		position: absolute;
+		color: darkblue;
+		width: 20%;
+		font-size: 20px;
+		background-color: #d6e3ff;
+		left: 0%;
+		border: solid;
+		border-width: 4px;
+		border-color: darkblue;
+		position: absolute;
+	}
+
 }
 
