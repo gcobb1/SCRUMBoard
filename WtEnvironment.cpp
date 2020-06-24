@@ -1,5 +1,9 @@
-//I beleve  need to create a vector of functor objects up to 100 tasks and each object tells the index that corresponds to the task. 100 possible slots to connect.
+/*****
+Author: Gavin Cobb
+Date: April 2020
 
+The purpose of this file is to hold the implementations of the BoardApplication objects methods that create the front end mechanism as well as connect to the backend mechanism designed in SCRUMBoard.cpp
+*****/
 
 
 
@@ -23,6 +27,7 @@
 #include "WtEnvironment.h"
 #include <functional>
 
+//The purpose of this function is to clear the blue and set the moves to the apropriate index so that the next function iis set up to add the task
 void boardApplication::ClearAddBlue(int numBlue){
 	//this->size++;
 	this->table->clear();
@@ -45,6 +50,8 @@ void boardApplication::ClearAddBlue(int numBlue){
 
 
 }
+
+//This function is similar to the above functions except in the second column to set up for the third
 void boardApplication::ClearAddBlue2(int numBlue){
 	//this->size++;
 	this->table->clear();
@@ -67,6 +74,7 @@ void boardApplication::ClearAddBlue2(int numBlue){
 
 
 }
+//See above
 void boardApplication::ClearAddBlue3(int numBlue){
 	//this->size++;
 	this->table->clear();
@@ -89,6 +97,7 @@ void boardApplication::ClearAddBlue3(int numBlue){
 
 
 }
+//See Above //Next update wiill remove these redundancy functions
 void boardApplication::ClearAddBlue4(int numBlue){
 	//this->size++;
 	this->table->clear();
@@ -111,7 +120,7 @@ void boardApplication::ClearAddBlue4(int numBlue){
 
 
 }
-
+//The purpose of this function is to add the task to the grid on the front end
 void boardApplication::AddTask(std::vector<std::vector<std::string> > GridStrings){
 	this->size++;
 	this->table->clear();
@@ -132,6 +141,7 @@ void boardApplication::AddTask(std::vector<std::vector<std::string> > GridString
 
 
 }
+//The purpose of this function is to clear the table to add the next string to the second table.
 void boardApplication::AddTask2(std::vector<std::vector<std::string> > GridStrings){
 	//this->size2++;
 	this->table->clear();
@@ -149,6 +159,7 @@ void boardApplication::AddTask2(std::vector<std::vector<std::string> > GridStrin
 	}
 	this->addFlagProg = 1;
 }
+//The next functions are similar to above and will be deprecated and revamped in the next update.
 void boardApplication::AddTask3(std::vector<std::vector<std::string> > GridStrings){
 	//this->size2++;
 	this->table->clear();
@@ -184,31 +195,41 @@ void boardApplication::AddTask4(std::vector<std::vector<std::string> > GridStrin
 	this->addFlagProg = 1;
 }
 
+
+
+
+//Constructs the applicatiion and deals with client-server manipulations
+//if you enjoy this code and would like to check out more web apps see below->
+//Author: Gavin Cobb// gavincobbportfolio.com
+//
 boardApplication::boardApplication(const Wt::WEnvironment& env)
 				: Wt::WApplication(env){
-//	std::vector<std::vector<std::string>> Matrix1;
-//	for(int incrementW = 0; incrementW < 100; incrementW++){
-//		intVec.push_back(incrementW);
-//	}
+	
+
+	//The next few lines provide the stylings for the web application such as title and header files
 	std::string fullstring = "";
-//	int incrementer = 1;
 	Wt::WApplication::useStyleSheet("style.css");
 	Wt::WApplication::setBodyClass("body");
 	setTitle("Scrum Task Board");
 
+
+	//Header
 	auto Header = Wt::cpp14::make_unique<Wt::WText>("Scrum Task Board!");
 	HeaderText = root()->addWidget(std::make_unique<Wt::WText>("Scrum Task Board!"));
 	HeaderText->setStyleClass("Header1");
-
+	
+	//Widget for Task Creation
 	this->taskEdit = root()->addWidget(Wt::cpp14::make_unique<Wt::WLineEdit>("Enter Task Here"));
 	this->taskEdit->setFocus();
 	this->taskEdit->setStyleClass("newTask");
-	MovesText = root()->addWidget(std::make_unique<Wt::WText>(std::to_string(numMoves)));
 
+	//Testing Purposes
+	MovesText = root()->addWidget(std::make_unique<Wt::WText>(std::to_string(numMoves)));
 	MovesText->setStyleClass("movesStyle");
+
+	//The next lines Create the Buttons
 	Wt::WPushButton *addButton = root()->addWidget(std::make_unique<Wt::WPushButton>("Add To: To Do"));
 	addButton->setStyleClass("button1");
-	
 	Wt::WPushButton *addButton2 = root()->addWidget(std::make_unique<Wt::WPushButton>("Add To: In Progress"));
 	addButton2->setStyleClass("button2");
 	Wt::WPushButton *addButton3 = root()->addWidget(std::make_unique<Wt::WPushButton>("Add To: Review"));
@@ -216,7 +237,7 @@ boardApplication::boardApplication(const Wt::WEnvironment& env)
 	Wt::WPushButton *addButton4 = root()->addWidget(std::make_unique<Wt::WPushButton>("Add To: Done"));
 	addButton4->setStyleClass("button4");
 
-	
+	//Creates the Container for the Grid widget to better manipulate stylings
 	Wt::WContainerWidget *w2 = root()->addWidget(std::make_unique<Wt::WContainerWidget>());
 	w2->setContentAlignment(Wt::AlignmentFlag::Center);
 	w2->setStyleClass("container1");
@@ -224,12 +245,12 @@ boardApplication::boardApplication(const Wt::WEnvironment& env)
 	this->TCells2.resize(100);	
 	this->TCells3.resize(100);	
 	this->TCells4.resize(100);
-
 	table = w2->addWidget(std::make_unique<Wt::WTable>());
 	table->setHeaderCount(0);
 	table->setWidth(Wt::WLength("100%"));
-	//For now we are just creating a grid
-	//Later we will add a clear add table to add the task to the grid an increase the size of the grid by one
+	
+
+	//First Creation of the front end Grid with stylings
 	for(int i = 0; i < this->size; i++){
 		for(int j = 0; j < 4; j++){
 			if(j == 0){
@@ -252,6 +273,9 @@ boardApplication::boardApplication(const Wt::WEnvironment& env)
 			}
 		}
 	}
+
+
+	//Create table Borders
 	table->setStyleClass("string-item");
 	table->addStyleClass("table-bordered");
 	
@@ -279,7 +303,9 @@ boardApplication::boardApplication(const Wt::WEnvironment& env)
 
 	ScrumBoard *Sboard = new ScrumBoard();
 	//static std::vector<std::function<void(int)>> functors;
-	
+	//vectors of functors to attach to each table cell in each column
+	//To explain: A functor is added to a mouse event as a signal. The functor returns void and accepts an integer
+	//This integer is the index of the blue selected square that is used to add this string to the next column.
 	static std::vector<std::function<void(int)>> functors;
 	static std::vector<std::function<void(int)>> functors2;
 	static std::vector<std::function<void(int)>> functors3;
