@@ -29,9 +29,6 @@ public:
 		this->GridStrings[0].push_back("Review");
 		this->GridStrings[0].push_back("Done");
 	}
-	~ScrumBoard(){
-		delete this;
-	}
 	void AddTasker(std::string taskString);
 	void AddTasker2(std::string taskString2);
 	void AddTasker3(std::string taskString3);
